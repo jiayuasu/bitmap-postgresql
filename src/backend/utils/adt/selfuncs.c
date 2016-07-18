@@ -142,6 +142,9 @@ static Const *string_to_const(const char *str, Oid datatype);
 static Const *string_to_bytea_const(const char *str, size_t str_len);
 
 
+
+
+
 /*
  *		eqsel			- Selectivity of "=" for any data types.
  *
@@ -5358,4 +5361,22 @@ gincostestimate(PG_FUNCTION_ARGS)
 						indexSelectivity, indexCorrelation);
 
 	PG_RETURN_VOID();
+}
+Datum
+bmcostestimate(PG_FUNCTION_ARGS)
+{
+   PlannerInfo *root = (PlannerInfo *) PG_GETARG_POINTER(0);
+   IndexOptInfo *index = (IndexOptInfo *) PG_GETARG_POINTER(1);
+   List       *indexQuals = (List *) PG_GETARG_POINTER(2);
+   RelOptInfo *outer_rel = (RelOptInfo *) PG_GETARG_POINTER(3);
+   Cost       *indexStartupCost = (Cost *) PG_GETARG_POINTER(4);
+   Cost       *indexTotalCost = (Cost *) PG_GETARG_POINTER(5);
+   Selectivity *indexSelectivity = (Selectivity *) PG_GETARG_POINTER(6);
+   double     *indexCorrelation = (double *) PG_GETARG_POINTER(7);
+
+   genericcostestimate(root, index, indexQuals, outer_rel, 0.0,
+                       indexStartupCost, indexTotalCost,
+                       indexSelectivity, indexCorrelation);
+
+   PG_RETURN_VOID();
 }

@@ -149,33 +149,54 @@ SELECT	ctid, amopfamily
 FROM	pg_catalog.pg_amop fk 
 WHERE	amopfamily != 0 AND 
 	NOT EXISTS(SELECT 1 FROM pg_catalog.pg_opfamily pk WHERE pk.oid = fk.amopfamily);
- ctid | amopfamily 
-------+------------
-(0 rows)
+  ctid  | amopfamily 
+--------+------------
+ (4,34) |       7080
+ (4,35) |       7080
+ (4,36) |       7080
+ (4,37) |       7080
+ (4,38) |       7080
+(5 rows)
 
 SELECT	ctid, amoplefttype 
 FROM	pg_catalog.pg_amop fk 
 WHERE	amoplefttype != 0 AND 
 	NOT EXISTS(SELECT 1 FROM pg_catalog.pg_type pk WHERE pk.oid = fk.amoplefttype);
- ctid | amoplefttype 
-------+--------------
-(0 rows)
+  ctid  | amoplefttype 
+--------+--------------
+ (4,34) |         3310
+ (4,35) |         3310
+ (4,36) |         3310
+ (4,37) |         3310
+ (4,38) |         3310
+(5 rows)
 
 SELECT	ctid, amoprighttype 
 FROM	pg_catalog.pg_amop fk 
 WHERE	amoprighttype != 0 AND 
 	NOT EXISTS(SELECT 1 FROM pg_catalog.pg_type pk WHERE pk.oid = fk.amoprighttype);
- ctid | amoprighttype 
-------+---------------
-(0 rows)
+  ctid  | amoprighttype 
+--------+---------------
+ (4,34) |          3310
+ (4,35) |          3310
+ (4,36) |          3310
+ (4,37) |          3310
+ (4,38) |          3310
+(5 rows)
 
 SELECT	ctid, amopopr 
 FROM	pg_catalog.pg_amop fk 
 WHERE	amopopr != 0 AND 
 	NOT EXISTS(SELECT 1 FROM pg_catalog.pg_operator pk WHERE pk.oid = fk.amopopr);
- ctid | amopopr 
-------+---------
-(0 rows)
+  ctid  | amopopr 
+--------+---------
+ (4,11) |    7076
+ (4,34) |    3327
+ (4,35) |    3329
+ (4,36) |    3325
+ (4,37) |    3330
+ (4,38) |    3328
+(6 rows)
 
 SELECT	ctid, amopmethod 
 FROM	pg_catalog.pg_amop fk 

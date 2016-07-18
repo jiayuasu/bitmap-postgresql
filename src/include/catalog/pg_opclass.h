@@ -211,4 +211,45 @@ DATA(insert (	2742	tsvector_ops		PGNSP PGUID 3659  3614 t 25 ));
 DATA(insert (	403		tsquery_ops			PGNSP PGUID 3683  3615 t 0 ));
 DATA(insert (	783		tsquery_ops			PGNSP PGUID 3702  3615 t 20 ));
 
+/*
+ * the operators for the on-disk bitmap index.
+ */
+DATA(insert (	3013	abstime_ops			PGNSP PGUID 3014 702 t 0 ));
+DATA(insert (	3013	array_ops			PGNSP PGUID 3015 2277 t 0 ));
+DATA(insert (	3013	bit_ops				PGNSP PGUID 3016 1560 t 0 ));
+DATA(insert (	3013	bool_ops			PGNSP PGUID 3017 16 t 0 ));
+DATA(insert (	3013	bpchar_ops			PGNSP PGUID 3018 1042 t 0 ));
+DATA(insert (	3013	bytea_ops			PGNSP PGUID 3019 17 t 0 ));
+DATA(insert (	3013	char_ops			PGNSP PGUID 3020  18 t 0 ));
+DATA(insert (	3013	cidr_ops			PGNSP PGUID 3025  869 f 0 ));
+DATA(insert (	3013	date_ops			PGNSP PGUID 3022 1082 t 0 ));
+DATA(insert (	3013	float4_ops			PGNSP PGUID 3023 700 t 0 ));
+DATA(insert (	3013	float8_ops			PGNSP PGUID 3024 701 t 0 ));
+DATA(insert (	3013	inet_ops			PGNSP PGUID 3025 869 t 0 ));
+DATA(insert (	3013	int2_ops			PGNSP PGUID 3026  21 t 0 ));
+DATA(insert (	3013	int4_ops        	PGNSP PGUID 3027  23 t 0 ));
+DATA(insert (	3013	int8_ops			PGNSP PGUID 3028  20 t 0 ));
+DATA(insert (	3013	interval_ops		PGNSP PGUID 3029 1186 t 0 ));
+DATA(insert (	3013	macaddr_ops			PGNSP PGUID 3030  829 t 0 ));
+DATA(insert (	3013	name_ops			PGNSP PGUID 3031  19 t 0 ));
+DATA(insert (	3013	numeric_ops			PGNSP PGUID 3032 1700 t 0 ));
+DATA(insert (	3013	oid_ops				PGNSP PGUID 3033  26 t 0 ));
+DATA(insert (	3013	oidvector_ops		PGNSP PGUID 3034  30 t 0 ));
+DATA(insert (	3013	text_ops			PGNSP PGUID 3035  25 t 0 ));
+DATA(insert (	3013	time_ops			PGNSP PGUID 3036 1083 t 0 ));
+DATA(insert (	3013	timestamptz_ops 	PGNSP PGUID 3037 1184 t 0 ));
+DATA(insert (	3013	timetz_ops			PGNSP PGUID 3038 1266 t 0 ));
+DATA(insert (	3013	varbit_ops			PGNSP PGUID 3039 1562 t 0 ));
+DATA(insert (	3013	varchar_ops			PGNSP PGUID 3035  25 f 0 ));
+DATA(insert (	3013	timestamp_ops		PGNSP PGUID 3041 1114 t 0 ));
+DATA(insert (	3013	text_pattern_ops	PGNSP PGUID 3042  25 f 0 ));
+DATA(insert (	3013	varchar_pattern_ops PGNSP PGUID 3042  25 f 0 ));
+DATA(insert (	3013	bpchar_pattern_ops	PGNSP PGUID 3044 1042 f 0 ));
+DATA(insert (	3013	name_pattern_ops	PGNSP PGUID 3045  19 f 0 ));
+DATA(insert (	3013	money_ops			PGNSP PGUID 3046 790 t 0 ));
+DATA(insert (	3013	reltime_ops			PGNSP PGUID 3047 703 t 0 ));
+DATA(insert (	3013	tinterval_ops		PGNSP PGUID 3048 704 t 0 ));
+
+
+
 #endif   /* PG_OPCLASS_H */

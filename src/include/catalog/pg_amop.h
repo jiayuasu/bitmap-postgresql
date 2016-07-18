@@ -687,4 +687,431 @@ DATA(insert (	3683   3615 3615 5 f   3679 403 ));
 DATA(insert (	3702   3615 3615 7	t  3693 783 ));
 DATA(insert (	3702   3615 3615 8	t  3694 783 ));
 
+/*
+ * the operators for the on-disk bitmap index.
+ */
+/*
+ * on-disk bitmap index abstime
+ */
+DATA(insert (	3014	702 702 1 f  562 3013 ));
+DATA(insert (	3014	702 702 2 f  564 3013 ));
+DATA(insert (	3014	702 702 3 f  560 3013 ));
+DATA(insert (	3014	702 702 4 f  565 3013 ));
+DATA(insert (	3014	702 702 5 f  563 3013 ));
+
+/*
+ * on-disk bitmap index array
+ */
+DATA(insert (	3015	2277 2277 1 f 1072 3013 ));
+DATA(insert (	3015	2277 2277 2 f 1074 3013 ));
+DATA(insert (	3015	2277 2277 3 f 1070 3013 ));
+DATA(insert (	3015	2277 2277 4 f 1075 3013 ));
+DATA(insert (	3015	2277 2277 5 f 1073 3013 ));
+
+/*
+ * on-disk bitmap index bit
+ */
+DATA(insert (	3016	1560 1560 1 f 1786 3013 ));
+DATA(insert (	3016	1560 1560 2 f 1788 3013 ));
+DATA(insert (	3016	1560 1560 3 f 1784 3013 ));
+DATA(insert (	3016	1560 1560 4 f 1789 3013 ));
+DATA(insert (	3016	1560 1560 5 f 1787 3013 ));
+
+/*
+ * on-disk bitmap index bool
+ */
+DATA(insert (	3017	16 16 1 f	58 3013 ));
+DATA(insert (	3017	16 16 2 f 1694 3013 ));
+DATA(insert (	3017	16 16 3 f	91 3013 ));
+DATA(insert (	3017	16 16 4 f 1695 3013 ));
+DATA(insert (	3017	16 16 5 f	59 3013 ));
+
+/*
+ * on-disk bitmap index bpchar
+ */
+DATA(insert (	3018	1042 1042 1 f 1058 3013 ));
+DATA(insert (	3018	1042 1042 2 f 1059 3013 ));
+DATA(insert (	3018	1042 1042 3 f 1054 3013 ));
+DATA(insert (	3018	1042 1042 4 f 1061 3013 ));
+DATA(insert (	3018	1042 1042 5 f 1060 3013 ));
+
+/*
+ * on-disk bitmap index bytea
+ */
+DATA(insert (	3019	17 17 1 f 1957 3013 ));
+DATA(insert (	3019	17 17 2 f 1958 3013 ));
+DATA(insert (	3019	17 17 3 f 1955 3013 ));
+DATA(insert (	3019	17 17 4 f 1960 3013 ));
+DATA(insert (	3019	17 17 5 f 1959 3013 ));
+
+/*
+ *	on-disk bitmap index char
+ */
+DATA(insert (	3020	18 18 1 f  631 3013 ));
+DATA(insert (	3020	18 18 2 f  632 3013 ));
+DATA(insert (	3020	18 18 3 f	92 3013 ));
+DATA(insert (	3020	18 18 4 f  634 3013 ));
+DATA(insert (	3020	18 18 5 f  633 3013 ));
+
+/*
+ *	on-disk bitmap index date
+ */
+DATA(insert (	3022	1082 1082 1 f 1095 3013 ));
+DATA(insert (	3022	1082 1082 2 f 1096 3013 ));
+DATA(insert (	3022	1082 1082 3 f 1093 3013 ));
+DATA(insert (	3022	1082 1082 4 f 1098 3013 ));
+DATA(insert (	3022	1082 1082 5 f 1097 3013 ));
+
+/*
+ * date-timestamp
+ */
+DATA(insert (	3022 1082 1114 1 f 2345 3013 ));
+DATA(insert (	3022 1082 1114 2 f 2346 3013 ));
+DATA(insert (	3022 1082 1114 3 f 2347 3013 ));
+DATA(insert (	3022 1082 1114 4 f 2348 3013 ));
+DATA(insert (	3022 1082 1114 5 f 2349 3013 ));
+
+/*
+ * date-timestamptz
+ */
+DATA(insert (	3022 1082 1184 1 f 2358 3013 ));
+DATA(insert (	3022 1082 1184 2 f 2359 3013 ));
+DATA(insert (	3022 1082 1184 3 f 2360 3013 ));
+DATA(insert (	3022 1082 1184 4 f 2361 3013 ));
+DATA(insert (	3022 1082 1184 5 f 2362 3013 ));
+
+/*
+ * float4
+ */
+DATA(insert (	3023	700 700 1 f  622 3013 ));
+DATA(insert (	3023	700 700 2 f  624 3013 ));
+DATA(insert (	3023	700 700 3 f  620 3013 ));
+DATA(insert (	3023	700 700 4 f  625 3013 ));
+DATA(insert (	3023	700 700 5 f  623 3013 ));
+
+/*
+ * float48
+ */
+DATA(insert (	3023  700 701 1 f  1122 3013 ));
+DATA(insert (	3023  700 701 2 f  1124 3013 ));
+DATA(insert (	3023  700 701 3 f  1120 3013 ));
+DATA(insert (	3023  700 701 4 f  1125 3013 ));
+DATA(insert (	3023  700 701 5 f  1123 3013 ));
+
+/*
+ * float8
+ */
+DATA(insert (	3024	701 701 1 f  672 3013 ));
+DATA(insert (	3024	701 701 2 f  673 3013 ));
+DATA(insert (	3024	701 701 3 f  670 3013 ));
+DATA(insert (	3024	701 701 4 f  675 3013 ));
+DATA(insert (	3024	701 701 5 f  674 3013 ));
+
+/*
+ * float84
+ */
+DATA(insert (	3024  701 700 1 f  1132 3013 ));
+DATA(insert (	3024  701 700 2 f  1134 3013 ));
+DATA(insert (	3024  701 700 3 f  1130 3013 ));
+DATA(insert (	3024  701 700 4 f  1135 3013 ));
+DATA(insert (	3024  701 700 5 f  1133 3013 ));
+
+/*
+ * inet
+ */
+DATA(insert (	3025	869 869 1 f 1203 3013 ));
+DATA(insert (	3025	869 869 2 f 1204 3013 ));
+DATA(insert (	3025	869 869 3 f 1201 3013 ));
+DATA(insert (	3025	869 869 4 f 1206 3013 ));
+DATA(insert (	3025	869 869 5 f 1205 3013 ));
+
+/*
+ * int2
+ */
+DATA(insert (	3026	21 21 1 f	95 3013 ));
+DATA(insert (	3026	21 21 2 f  522 3013 ));
+DATA(insert (	3026	21 21 3 f	94 3013 ));
+DATA(insert (	3026	21 21 4 f  524 3013 ));
+DATA(insert (	3026	21 21 5 f  520 3013 ));
+
+/*
+ * int24
+ */
+DATA(insert (	3026   21 23 1 f  534 3013 ));
+DATA(insert (	3026   21 23 2 f  540 3013 ));
+DATA(insert (	3026   21 23 3 f  532 3013 ));
+DATA(insert (	3026   21 23 4 f  542 3013 ));
+DATA(insert (	3026   21 23 5 f  536 3013 ));
+
+/*
+ * int28
+ */
+DATA(insert (	3026   21 20 1 f  1864 3013 ));
+DATA(insert (	3026   21 20 2 f  1866 3013 ));
+DATA(insert (	3026   21 20 3 f  1862 3013 ));
+DATA(insert (	3026   21 20 4 f  1867 3013 ));
+DATA(insert (	3026   21 20 5 f  1865 3013 ));
+
+/*
+ * int4
+ */
+DATA(insert (	3027	23 23 1 f	97 3013 ));
+DATA(insert (	3027	23 23 2 f  523 3013 ));
+DATA(insert (	3027	23 23 3 f	96 3013 ));
+DATA(insert (	3027	23 23 4 f  525 3013 ));
+DATA(insert (	3027	23 23 5 f  521 3013 ));
+
+/*
+ * int42
+ */
+DATA(insert (	3027   23 21 1 f  535 3013 ));
+DATA(insert (	3027   23 21 2 f  541 3013 ));
+DATA(insert (	3027   23 21 3 f  533 3013 ));
+DATA(insert (	3027   23 21 4 f  543 3013 ));
+DATA(insert (	3027   23 21 5 f  537 3013 ));
+
+/*
+ * int48
+ */
+DATA(insert (	3027   23 20 1 f	37 3013 ));
+DATA(insert (	3027   23 20 2 f	80 3013 ));
+DATA(insert (	3027   23 20 3 f	15 3013 ));
+DATA(insert (	3027   23 20 4 f	82 3013 ));
+DATA(insert (	3027   23 20 5 f	76 3013 ));
+
+/*
+ * int8
+ */
+DATA(insert (	3028	20 20 1 f  412 3013 ));
+DATA(insert (	3028	20 20 2 f  414 3013 ));
+DATA(insert (	3028	20 20 3 f  410 3013 ));
+DATA(insert (	3028	20 20 4 f  415 3013 ));
+DATA(insert (	3028	20 20 5 f  413 3013 ));
+
+/*
+ * int82
+ */
+DATA(insert (	3028   20 21 1 f  1870 3013 ));
+DATA(insert (	3028   20 21 2 f  1872 3013 ));
+DATA(insert (	3028   20 21 3 f  1868 3013 ));
+DATA(insert (	3028   20 21 4 f  1873 3013 ));
+DATA(insert (	3028   20 21 5 f  1871 3013 ));
+
+/*
+ * int84
+ */
+DATA(insert (	3028   20 23 1 f  418 3013 ));
+DATA(insert (	3028   20 23 2 f  420 3013 ));
+DATA(insert (	3028   20 23 3 f  416 3013 ));
+DATA(insert (	3028   20 23 4 f  430 3013 ));
+DATA(insert (	3028   20 23 5 f  419 3013 ));
+
+/*
+ * interval
+ */
+DATA(insert (	3029	1186 1186 1 f 1332 3013 ));
+DATA(insert (	3029	1186 1186 2 f 1333 3013 ));
+DATA(insert (	3029	1186 1186 3 f 1330 3013 ));
+DATA(insert (	3029	1186 1186 4 f 1335 3013 ));
+DATA(insert (	3029	1186 1186 5 f 1334 3013 ));
+
+/*
+ * macaddr
+ */
+DATA(insert (	3030	829 829 1 f 1222 3013 ));
+DATA(insert (	3030	829 829 2 f 1223 3013 )); 
+DATA(insert (	3030	829 829 3 f 1220 3013 ));
+DATA(insert (	3030	829 829 4 f 1225 3013 ));
+DATA(insert (	3030	829 829 5 f 1224 3013 ));
+
+/*
+ * name
+ */
+DATA(insert (	3031	19 19 1 f  660 3013 ));
+DATA(insert (	3031	19 19 2 f  661 3013 ));
+DATA(insert (	3031	19 19 3 f	93 3013 ));
+DATA(insert (	3031	19 19 4 f  663 3013 ));
+DATA(insert (	3031	19 19 5 f  662 3013 ));
+
+/*
+ * numeric
+ */
+DATA(insert (	3032	1700 1700 1 f 1754 3013 ));
+DATA(insert (	3032	1700 1700 2 f 1755 3013 ));
+DATA(insert (	3032	1700 1700 3 f 1752 3013 ));
+DATA(insert (	3032	1700 1700 4 f 1757 3013 ));
+DATA(insert (	3032	1700 1700 5 f 1756 3013 ));
+
+/*
+ * oid
+ */
+DATA(insert (	3033	26 26 1 f  609 3013 ));
+DATA(insert (	3033	26 26 2 f  611 3013 ));
+DATA(insert (	3033	26 26 3 f  607 3013 ));
+DATA(insert (	3033	26 26 4 f  612 3013 ));
+DATA(insert (	3033	26 26 5 f  610 3013 ));
+
+/*
+ * oidvector
+ */
+DATA(insert (	3034	30 30 1 f  645 3013 ));
+DATA(insert (	3034	30 30 2 f  647 3013 ));
+DATA(insert (	3034	30 30 3 f  649 3013 ));
+DATA(insert (	3034	30 30 4 f  648 3013 ));
+DATA(insert (	3034	30 30 5 f  646 3013 ));
+
+/*
+ * text
+ */
+DATA(insert (	3035	25 25 1 f  664 3013 ));
+DATA(insert (	3035	25 25 2 f  665 3013 ));
+DATA(insert (	3035	25 25 3 f	98 3013 ));
+DATA(insert (	3035	25 25 4 f  667 3013 ));
+DATA(insert (	3035	25 25 5 f  666 3013 ));
+
+/*
+ * time
+ */
+DATA(insert (	3036	1083 1083 1 f 1110 3013 ));
+DATA(insert (	3036	1083 1083 2 f 1111 3013 ));
+DATA(insert (	3036	1083 1083 3 f 1108 3013 ));
+DATA(insert (	3036	1083 1083 4 f 1113 3013 ));
+DATA(insert (	3036	1083 1083 5 f 1112 3013 ));
+
+/*
+ * timestamptz
+ */
+DATA(insert (	3037	1184 1184 1 f 1322 3013 ));
+DATA(insert (	3037	1184 1184 2 f 1323 3013 ));
+DATA(insert (	3037	1184 1184 3 f 1320 3013 ));
+DATA(insert (	3037	1184 1184 4 f 1325 3013 ));
+DATA(insert (	3037	1184 1184 5 f 1324 3013 ));
+
+/*
+ * timestamptz-date
+ */
+DATA(insert (	3037 1184 1082 1 f 2384 3013 ));
+DATA(insert (	3037 1184 1082 2 f 2385 3013 ));
+DATA(insert (	3037 1184 1082 3 f 2386 3013 ));
+DATA(insert (	3037 1184 1082 4 f 2387 3013 ));
+DATA(insert (	3037 1184 1082 5 f 2388 3013 ));
+
+/*
+ * timestamptz-timestamp
+ */
+DATA(insert (	3037 1184 1114 1 f 2540 3013 ));
+DATA(insert (	3037 1184 1114 2 f 2541 3013 ));
+DATA(insert (	3037 1184 1114 3 f 2542 3013 ));
+DATA(insert (	3037 1184 1114 4 f 2543 3013 ));
+DATA(insert (	3037 1184 1114 5 f 2544 3013 ));
+
+/*
+ * timetz
+ */
+DATA(insert (	3038 1266 1266 1 f 1552 3013 ));
+DATA(insert (	3038 1266 1266 2 f 1553 3013 ));
+DATA(insert (	3038 1266 1266 3 f 1550 3013 ));
+DATA(insert (	3038 1266 1266 4 f 1555 3013 ));
+DATA(insert (	3038 1266 1266 5 f 1554 3013 ));
+
+/*
+ * varbit
+ */
+DATA(insert (	3039	1562 1562 1 f 1806 3013 ));
+DATA(insert (	3039	1562 1562 2 f 1808 3013 ));
+DATA(insert (	3039	1562 1562 3 f 1804 3013 ));
+DATA(insert (	3039	1562 1562 4 f 1809 3013 ));
+DATA(insert (	3039	1562 1562 5 f 1807 3013 ));
+
+/*
+ * timestamp
+ */
+DATA(insert (	3041	1114 1114 1 f 2062 3013 ));
+DATA(insert (	3041	1114 1114 2 f 2063 3013 ));
+DATA(insert (	3041	1114 1114 3 f 2060 3013 ));
+DATA(insert (	3041	1114 1114 4 f 2065 3013 ));
+DATA(insert (	3041	1114 1114 5 f 2064 3013 ));
+
+/*
+ * timestamp-date
+ */
+DATA(insert (	3041 1114 1082 1 f 2371 3013 ));
+DATA(insert (	3041 1114 1082 2 f 2372 3013 ));
+DATA(insert (	3041 1114 1082 3 f 2373 3013 ));
+DATA(insert (	3041 1114 1082 4 f 2374 3013 ));
+DATA(insert (	3041 1114 1082 5 f 2375 3013 ));
+
+/*
+ * timestamp-timestamptz
+ */
+DATA(insert (	3041 1114 1184 1 f 2534 3013 ));
+DATA(insert (	3041 1114 1184 2 f 2535 3013 ));
+DATA(insert (	3041 1114 1184 3 f 2536 3013 ));
+DATA(insert (	3041 1114 1184 4 f 2537 3013 ));
+DATA(insert (	3041 1114 1184 5 f 2538 3013 ));
+
+/*
+ * text pattern
+ */
+DATA(insert (	3042	25 25 1 f 2314 3013 ));
+DATA(insert (	3042	25 25 2 f 2315 3013 ));
+DATA(insert (	3042	25 25 3 f 2316 3013 ));
+DATA(insert (	3042	25 25 4 f 2317 3013 ));
+DATA(insert (	3042	25 25 5 f 2318 3013 ));
+
+/*
+ * bpchar pattern
+ */
+DATA(insert (	3044	1042 1042 1 f 2326 3013 ));
+DATA(insert (	3044	1042 1042 2 f 2327 3013 ));
+DATA(insert (	3044	1042 1042 3 f 7076 3013 ));
+DATA(insert (	3044	1042 1042 4 f 2329 3013 ));
+DATA(insert (	3044	1042 1042 5 f 2330 3013 ));
+
+/*
+ * name pattern
+ */
+DATA(insert (	3045	19 19 1 f 2332 3013 ));
+DATA(insert (	3045	19 19 2 f 2333 3013 ));
+DATA(insert (	3045	19 19 3 f 2334 3013 ));
+DATA(insert (	3045	19 19 4 f 2335 3013 ));
+DATA(insert (	3045	19 19 5 f 2336 3013 ));
+
+/*
+ * money
+ */
+DATA(insert (	3046	790 790 1 f  902 3013 ));
+DATA(insert (	3046	790 790 2 f  904 3013 ));
+DATA(insert (	3046	790 790 3 f  900 3013 ));
+DATA(insert (	3046	790 790 4 f  905 3013 ));
+DATA(insert (	3046	790 790 5 f  903 3013 ));
+
+/*
+ * reltime
+ */
+DATA(insert (	3047	703 703 1 f  568 3013 ));
+DATA(insert (	3047	703 703 2 f  570 3013 ));
+DATA(insert (	3047	703 703 3 f  566 3013 ));
+DATA(insert (	3047	703 703 4 f  571 3013 ));
+DATA(insert (	3047	703 703 5 f  569 3013 ));
+
+/*
+ * tinterval
+ */
+DATA(insert (	3048	704 704 1 f  813 3013 ));
+DATA(insert (	3048	704 704 2 f  815 3013 ));
+DATA(insert (	3048	704 704 3 f  811 3013 ));
+DATA(insert (	3048	704 704 4 f  816 3013 ));
+DATA(insert (	3048	704 704 5 f  814 3013 ));
+
+/*
+ * gpxlogloc
+ */
+DATA(insert (	7080	3310 3310 1 f 3327 403 ));
+DATA(insert (	7080	3310 3310 2 f 3329 403 ));
+DATA(insert (	7080	3310 3310 3 f 3325 403 ));
+DATA(insert (	7080	3310 3310 4 f 3330 403 ));
+DATA(insert (	7080	3310 3310 5 f 3328 403 ));
+
+
 #endif   /* PG_AMOP_H */

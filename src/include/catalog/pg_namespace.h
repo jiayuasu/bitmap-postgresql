@@ -79,6 +79,10 @@ DESCR("standard public schema");
 #define PG_PUBLIC_NAMESPACE 2200
 
 
+DATA(insert OID = 3012  ( "pg_bitmapindex" PGUID _null_ ));
+DESCR("Reserved schema for internal relations of bitmap indexes");
+#define PG_BITMAPINDEX_NAMESPACE 3012
+
 /*
  * prototypes for functions in pg_namespace.c
  */

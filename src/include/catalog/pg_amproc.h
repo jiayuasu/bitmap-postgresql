@@ -333,4 +333,54 @@ DATA(insert (	3659   3614 3614 4 3658 ));
 DATA(insert (	3626   3614 3614 1 3622 ));
 DATA(insert (	3683   3615 3615 1 3668 ));
 
+/*
+ * the operator routines for the on-disk bitmap index.
+ */
+DATA(insert (	3014	702 702 1 357 ));		/* abstime */
+DATA(insert (	3015	2277  2277 1 382 ));		/* array */
+DATA(insert (	3016	1560  1560 1 1596 ));	/* bit */
+DATA(insert (	3017	16  16 1 1693 ));	/* bool */
+DATA(insert (	3018	1042  1042 1 1078 ));	/* bpchar */
+DATA(insert (	3019	17  17 1 1954 ));	/* bytea */
+DATA(insert (	3020	 18   18 1 358 ));		/* char */
+DATA(insert (	3022	1082  1082 1 1092 ));	/* date */
+DATA(insert (	3022 1082 1114 1 2344 ));	/* date-timestamp */
+DATA(insert (	3022 1082 1184 1 2357 ));	/* date-timestamptz */
+DATA(insert (	3023	700  700 1 354 ));		/* float4 */
+DATA(insert (	3023  700 701 1 2194 ));	/* float48 */
+DATA(insert (	3024	701  701 1 355 ));		/* float8 */
+DATA(insert (	3024  701 700 1 2195 ));	/* float84 */
+DATA(insert (	3025	869  869 1  926 ));	/* inet */
+DATA(insert (	3026	 21   21 1 350 ));		/* int2 */
+DATA(insert (	3026   21 23 1 2190 ));	/* int24 */
+DATA(insert (	3026   21 20 1 2192 ));	/* int28 */
+DATA(insert (	3027	 23   23 1 351 ));		/* int4 */
+DATA(insert (	3027   23 20 1 2191 ));	/* int42 */
+DATA(insert (	3027   23 21 1 2188 ));	/* int48 */
+DATA(insert (	3028	 20   20 1 842 ));		/* int8 */
+DATA(insert (	3028   20 21 1 2193 ));	/* int82 */
+DATA(insert (	3028   20 23 1 2189 ));	/* int84 */
+DATA(insert (	3029	1186  1186 1 1315 ));	/* interval */
+DATA(insert (	3030	 829   829 1  836 ));	/* macaddr */
+DATA(insert (	3031	 19   19 1 359 ));		/* name */
+DATA(insert (	3032	1700  1700 1 1769 ));	/* numeric */
+DATA(insert (	3033	 26   26 1 356 ));		/* oid */
+DATA(insert (	3034	 30   30 1 404 ));		/* oidvector */
+DATA(insert (	3035	 25   25 1 360 ));		/* text */
+DATA(insert (	3036	1083  1083 1 1107 ));	/* time */
+DATA(insert (	3037	1184  1184 1 1314 ));	/* timestamptz */
+DATA(insert (	3037 1184 1082 1 2383 ));	/* timestamptz-date */
+DATA(insert (	3037 1184 1114 1 2533 ));	/* timestamptz-timestamp */
+DATA(insert (	3038	1266  1266 1 1358 ));	/* timetz */
+DATA(insert (	3039	1562  1562 1 1672 ));	/* varbit */
+DATA(insert (	3041	1114  1114 1 2045 ));	/* timestamp */
+DATA(insert (	3041 1114 1082 1 2370 ));	/* timestamp-date */
+DATA(insert (	3041 1114 1184 1 2526 ));	/* timestamp-timestamptz */
+DATA(insert (	3042	 25   25 1 2166 ));	/* text pattern */
+DATA(insert (	3044	1042  1042 1 2180 ));	/* bpchar pattern */
+DATA(insert (	3045	 19   19 1 2187 ));	/* name pattern */
+DATA(insert (	3046	790  790 1  377 ));	/* money */
+DATA(insert (	3047	703  703 1 380 ));		/* reltime */
+DATA(insert (	3048	704  704 1 381 ));		/* tinterval */
+
 #endif   /* PG_AMPROC_H */

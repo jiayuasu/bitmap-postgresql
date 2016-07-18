@@ -1,0 +1,33 @@
+SET enable_seqscan = OFF;
+SET enable_indexscan = ON;
+SET enable_bitmapscan = ON;
+create table bm_test (i int, t text);
+insert into bm_test select i % 10, (i % 10)::text  from generate_series(1, 100) i;
+create index bm_test_idx on bm_test using bitmap (i);
+WARNING:  cache reference leak: cache pg_operator (28), tuple 0/17 has count 1
+select count(*) from bm_test where i=1;
+ count 
+-------
+    10
+(1 row)
+
+select * from bm_test where i > 10;
+ i | t 
+---+---
+(0 rows)
+
+reindex index bm_test_idx;
+WARNING:  cache reference leak: cache pg_operator (28), tuple 0/17 has count 1
+select count(*) from bm_test where i=1;
+ count 
+-------
+    10
+(1 row)
+
+select * from bm_test where i > 10;
+ i | t 
+---+---
+(0 rows)
+
+drop index bm_test_idx;
+drop table bm_test;

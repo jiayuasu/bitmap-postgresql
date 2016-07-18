@@ -4416,6 +4416,34 @@ DATA(insert OID = 2948 (  txid_visible_in_snapshot	PGNSP PGUID 12 1  0 f f t f i
 DESCR("is txid visible in snapshot?");
 
 
+
+/* the bitmap index access method routines */
+DATA(insert OID = 3050 (  bmgettuple	   PGNSP PGUID 12 1 0 f f t f v 2 16 "2281 2281" _null_ _null_ _null_	bmgettuple - _null_ _null_ ));
+DESCR("bitmap(internal)");
+DATA(insert OID = 3051 (  bmgetbitmap	   PGNSP PGUID 12 1 0 f f t f v 2 2281 "2281 2281" _null_ _null_ _null_  bmgetbitmap - _null_ _null_ ));
+DESCR("bitmap(internal)");
+DATA(insert OID = 3001 (  bminsert		   PGNSP PGUID 12 1 0 f f t f v 6 16 "2281 2281 2281 2281 2281 2281" _null_ _null_ _null_   bminsert - _null_ _null_ ));
+DESCR("bitmap(internal)");
+DATA(insert OID = 3002 (  bmbeginscan	   PGNSP PGUID 12 1 0 f f t f v 3 2281 "2281 2281 2281" _null_ _null_ _null_	bmbeginscan - _null_ _null_ )); 
+DESCR("bitmap(internal)");
+DATA(insert OID = 3003 (  bmrescan		   PGNSP PGUID 12 1 0 f f t f v 2 2278 "2281 2281" _null_ _null_ _null_ bmrescan - _null_ _null_ ));
+DESCR("bitmap(internal)");
+DATA(insert OID = 3004 (  bmendscan		   PGNSP PGUID 12 1 0 f f t f v 1 2278 "2281" _null_ _null_ _null_  bmendscan - _null_ _null_ ));
+DESCR("bitmap(internal)");
+DATA(insert OID = 3005 (  bmmarkpos		   PGNSP PGUID 12 1 0 f f t f v 1 2278 "2281" _null_ _null_ _null_  bmmarkpos - _null_ _null_ ));
+DESCR("bitmap(internal)");
+DATA(insert OID = 3006 (  bmrestrpos	   PGNSP PGUID 12 1 0 f f t f v 1 2278 "2281" _null_ _null_ _null_  bmrestrpos - _null_ _null_ ));
+DESCR("bitmap(internal)");
+DATA(insert OID = 3007 (  bmbuild		   PGNSP PGUID 12 1 0 f f t f v 3 2281 "2281 2281 2281" _null_ _null_ _null_ bmbuild - _null_ _null_ ));
+DESCR("bitmap(internal)");
+DATA(insert OID = 3008 (  bmbulkdelete	   PGNSP PGUID 12 1 0 f f t f v 4 2281 "2281 2281 2281 2281" _null_ _null_ _null_ bmbulkdelete - _null_ _null_ ));
+DESCR("bitmap(internal)");
+DATA(insert OID = 3009 (  bmvacuumcleanup  PGNSP PGUID 12 1 0 f f t f v 2 2281 "2281 2281" _null_ _null_ _null_ bmvacuumcleanup - _null_ _null_ ));
+DATA(insert OID = 3010 (  bmcostestimate   PGNSP PGUID 12 1 0 f f t f v 8 2278 "2281 2281 2281 2281 2281 2281 2281 2281" _null_ _null_ _null_  bmcostestimate - _null_ _null_ ));
+DESCR("bitmap(internal)");
+DATA(insert OID = 3011 (  bmoptions		   PGNSP PGUID 12 1 0 f f t f s 2 17 "1009 16" _null_ _null_ _null_  bmoptions - _null_ _null_ ));
+DESCR("btree(internal)");
+
 /*
  * Symbolic values for provolatile column: these indicate whether the result
  * of a function is dependent *only* on the values of its explicit arguments,
