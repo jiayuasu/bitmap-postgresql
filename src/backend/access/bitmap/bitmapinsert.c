@@ -1326,7 +1326,7 @@ _bitmap_write_bitmapwords(Buffer bitmapBuffer, BMTIDBuffer *buf)
 	final_end_hword_no = (cwords + words_written - 1) / BM_WORD_SIZE;
 
 	bitmap->hwords[final_start_hword_no] |= hwords[0];
-	memcpy(bitmap->hwords[final_start_hword_no + 1],
+	memcpy(bitmap->hwords+(final_start_hword_no + 1),
 		   hwords + 1,
 		   (final_end_hword_no - final_start_hword_no) *
 			sizeof(BM_WORD));
