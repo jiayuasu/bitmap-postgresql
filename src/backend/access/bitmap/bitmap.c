@@ -165,8 +165,8 @@ bmgetbitmap(PG_FUNCTION_ARGS)
 	}
 	/* Save tuple ID, and continue scanning */
 	heapTid = &scan->xs_ctup.t_self;
-	tbm_add_tuples(tbm, heapTid, 1);
-	ntids;
+//	tbm_add_tuples(tbm, heapTid, 1);
+	ntids++;
 
 	for (;;)
 	{
@@ -176,7 +176,7 @@ bmgetbitmap(PG_FUNCTION_ARGS)
 
 		/* Save tuple ID, and continue scanning */
 		heapTid = &(scan->xs_ctup.t_self);
-		tbm_add_tuples(tbm, heapTid, 1);
+//		tbm_add_tuples(tbm, heapTid, 1);
 		ntids++;
 	}
 
